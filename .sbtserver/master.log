@@ -1,0 +1,716 @@
+New log file opened at Fri Dec 18 17:18:45 GMT 2015 by 3800@Purnas-MBP.default
+jvm 3800@Purnas-MBP.default
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.66-b17
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=/Users/purna/akka-supervision
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory /Users/purna/akka-supervision/project
+[Loading] Found non-root projects 
+[Loading] Done in /Users/purna/akka-supervision/project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/purna/akka-supervision/project, returning: (akka-supervision-build)
+Loading project definition from /Users/purna/akka-supervision/project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5b979949, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory /Users/purna/akka-supervision
+[Loading] Found non-root projects 
+[Loading] Done in /Users/purna/akka-supervision, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.SerializersPlugin,sbt.plugins.SendEventServicePlugin,sbt.plugins.InteractionServicePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.BackgroundRunPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.InteractionServicePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.BackgroundRunPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in /Users/purna/akka-supervision, returning: (akka-supervision)
+Set current project to akka-supervision (in build file:/Users/purna/akka-supervision/)
+Reapplying settings...
+Set current project to akka-supervision (in build file:/Users/purna/akka-supervision/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/Users/purna/akka-supervision/}akka-supervision/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@43715b2a, check cycles: false
+Read from stdout: Updating {file:/Users/purna/akka-supervision/}akka-supervision...
+Updating {file:/Users/purna/akka-supervision/}akka-supervision...
+Other repositories:
+Default repositories:
+Using inline dependencies specified in Scala.
+:: resolving dependencies :: default#akka-supervision_2.11;1.0
+	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
+	validate = true
+	refresh = false
+resolving dependencies for configuration 'compile'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+Read from stdout: Resolving org.scala-lang#scala-library;2.11.7 ...
+Resolving org.scala-lang#scala-library;2.11.7 ...
+sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@23ad8e02
+sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7
+	found org.scala-lang#scala-library;2.11.7 in sbt-chain
+	[2.11.7] org.scala-lang#scala-library;2.11.7
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+Read from stdout: Resolving com.typesafe.akka#akka-actor_2.11;2.4.0 ...
+Resolving com.typesafe.akka#akka-actor_2.11;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.4.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.4.0
+	found com.typesafe.akka#akka-actor_2.11;2.4.0 in sbt-chain
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+Read from stdout: Resolving com.typesafe#config;1.3.0 ...
+Resolving com.typesafe#config;1.3.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe#config;1.3.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: com.typesafe#config;1.3.0
+	found com.typesafe#config;1.3.0 in sbt-chain
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+Read from stdout: Resolving com.typesafe.akka#akka-testkit_2.11;2.4.0 ...
+Resolving com.typesafe.akka#akka-testkit_2.11;2.4.0 ...
+sbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-testkit_2.11;2.4.0 {compile=[default(compile)]}
+sbt-chain: module revision found in cache: com.typesafe.akka#akka-testkit_2.11;2.4.0
+	found com.typesafe.akka#akka-testkit_2.11;2.4.0 in sbt-chain
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+resolving dependencies for configuration 'runtime'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [runtime]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+resolving dependencies for configuration 'test'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [test]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [runtime]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->default(compile)]
+Read from stdout: Resolving org.scalatest#scalatest_2.11;2.1.6 ...
+Resolving org.scalatest#scalatest_2.11;2.1.6 ...
+sbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.11;2.1.6 {test=[default(compile)]}
+sbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;2.1.6
+	found org.scalatest#scalatest_2.11;2.1.6 in sbt-chain
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang#scala-reflect;2.11.0 ...
+Resolving org.scala-lang#scala-reflect;2.11.0 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.0
+	found org.scala-lang#scala-reflect;2.11.0 in sbt-chain
+	[2.11.0] org.scala-lang#scala-reflect;2.11.0
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...
+Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1
+	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 in sbt-chain
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
+Read from stdout: Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
+Resolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1
+	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->master]
+resolving dependencies for configuration 'provided'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [provided]
+resolving dependencies for configuration 'optional'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [optional]
+resolving dependencies for configuration 'compile-internal'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile-internal]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [optional]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [provided]
+resolving dependencies for configuration 'runtime-internal'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [runtime-internal]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [runtime]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [optional]
+resolving dependencies for configuration 'test-internal'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [test-internal]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [test]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [runtime]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.4.0->com.typesafe#config;1.3.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->master(compile)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [compile->compile(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->runtime(*)]
+== resolving dependencies com.typesafe.akka#akka-testkit_2.11;2.4.0->com.typesafe.akka#akka-actor_2.11;2.4.0 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->com.typesafe.akka#akka-testkit_2.11;2.4.0 [compile->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->default(compile)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [compile->master(compile)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang#scala-reflect;2.11.0 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)]
+== resolving dependencies org.scalatest#scalatest_2.11;2.1.6->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scalatest#scalatest_2.11;2.1.6 [test->master]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [optional]
+== resolving dependencies for default#akka-supervision_2.11;1.0 [provided]
+resolving dependencies for configuration 'plugin'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [plugin]
+resolving dependencies for configuration 'sources'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [sources]
+resolving dependencies for configuration 'docs'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [docs]
+resolving dependencies for configuration 'pom'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [pom]
+resolving dependencies for configuration 'scala-tool'
+== resolving dependencies for default#akka-supervision_2.11;1.0 [scala-tool]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [scala-tool->default]
+Read from stdout: Resolving org.scala-lang#scala-compiler;2.11.7 ...
+Resolving org.scala-lang#scala-compiler;2.11.7 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.7 {scala-tool=[default, optional(default)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.7
+	found org.scala-lang#scala-compiler;2.11.7 in sbt-chain
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [scala-tool->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [scala-tool->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->default]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->runtime]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->master]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->optional(default)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [compile->master(*)]
+Read from stdout: Resolving org.scala-lang#scala-reflect;2.11.7 ...
+Resolving org.scala-lang#scala-reflect;2.11.7 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.7 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7
+	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain
+	[2.11.7] org.scala-lang#scala-reflect;2.11.7
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [compile->compile]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-reflect;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->master(*)]
+Read from stdout: Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
+Resolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4
+	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->master(*)]
+Read from stdout: Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
+Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...
+sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
+sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4
+	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->master(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [compile->compile(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [compile->compile(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [compile->compile]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.6 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-library;2.11.7 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang#scala-reflect;2.11.7 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-xml_2.11;1.0.4 [runtime->compile]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [runtime->runtime(*)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [runtime->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [scala-tool->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-compiler;2.11.7 [scala-tool->optional(default)]
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->jline#jline;2.12.1 [optional->master(*)]
+Read from stdout: Resolving jline#jline;2.12.1 ...
+Resolving jline#jline;2.12.1 ...
+sbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {optional=[compile(*), master(*)]}
+sbt-chain: module revision found in cache: jline#jline;2.12.1
+	found jline#jline;2.12.1 in sbt-chain
+== resolving dependencies org.scala-lang#scala-compiler;2.11.7->jline#jline;2.12.1 [optional->compile(*)]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [scala-tool->default]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [scala-tool->runtime]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [scala-tool->compile]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [scala-tool->master]
+== resolving dependencies default#akka-supervision_2.11;1.0->org.scala-lang#scala-library;2.11.7 [scala-tool->optional(default)]
+	resolved ivy file produced in cache
+:: downloading artifacts ::
+	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar
+	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.4.0!akka-actor_2.11.jar
+	[NOT REQUIRED] com.typesafe.akka#akka-testkit_2.11;2.4.0!akka-testkit_2.11.jar
+	[NOT REQUIRED] com.typesafe#config;1.3.0!config.jar(bundle)
+	[NOT REQUIRED] org.scalatest#scalatest_2.11;2.1.6!scalatest_2.11.jar
+	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.0!scala-reflect.jar
+	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar
+	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar
+	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(bundle)
+	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(bundle)
+	[NOT REQUIRED] jline#jline;2.12.1!jline.jar
+:: resolution report :: resolve 442ms :: artifacts dl 16ms
+	report for default#akka-supervision_2.11;1.0 compile produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-compile.xml
+	report for default#akka-supervision_2.11;1.0 runtime produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-runtime.xml
+	report for default#akka-supervision_2.11;1.0 test produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-test.xml
+	report for default#akka-supervision_2.11;1.0 provided produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-provided.xml
+	report for default#akka-supervision_2.11;1.0 optional produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-optional.xml
+	report for default#akka-supervision_2.11;1.0 compile-internal produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-compile-internal.xml
+	report for default#akka-supervision_2.11;1.0 runtime-internal produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-runtime-internal.xml
+	report for default#akka-supervision_2.11;1.0 test-internal produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-test-internal.xml
+	report for default#akka-supervision_2.11;1.0 plugin produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-plugin.xml
+	report for default#akka-supervision_2.11;1.0 sources produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-sources.xml
+	report for default#akka-supervision_2.11;1.0 docs produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-docs.xml
+	report for default#akka-supervision_2.11;1.0 pom produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-pom.xml
+	report for default#akka-supervision_2.11;1.0 scala-tool produced in /Users/purna/akka-supervision/target/resolution-cache/reports/default-akka-supervision_2.11-scala-tool.xml
+	resolve done (442ms resolve - 16ms download)
+Read from stdout: Done updating.
+Done updating.
+
+Initial source changes: 
+	removed:Set()
+	added: Set(/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala, /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala, /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala, /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala, /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala)
+
+Recompiling all 4 sources: invalidated sources (4) exceeded 50.0% of all sources
+Read from stdout: Compiling 4 Scala sources to /Users/purna/akka-supervision/target/scala-2.11/classes...
+Compiling 4 Scala sources to /Users/purna/akka-supervision/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 45b60222, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/classes:/Users/purna/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/purna/akka-supervision/target/scala-2.11/classes:/Users/purna/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/Users/purna/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/purna/.ivy2/cache/com.typesafe.akka/akka-testkit_2.11/jars/akka-testkit_2.11-2.4.0.jar
+Scala compilation took 4.673613405 s
+Invalidating /Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala...
+Invalidating (transitively) by inheritance from /Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala...
+Initial set of included nodes: Set(/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala)
+The /Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+The following member ref dependencies of /Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala are invalidated:
+	/Users/purna/akka-supervision/src/main/scala/supervision/Main.scala
+Invalidating /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala...
+Invalidating (transitively) by inheritance from /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala...
+Initial set of included nodes: Set(/Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala)
+The /Users/purna/akka-supervision/src/main/scala/supervision/Expression.scala source file has the following regular definitions changed:
+	notify, wait, copy$default$2, $asInstanceOf, productArity, equals, Add, asInstanceOf, Divide, synchronized, left, $isInstanceOf, Expression, canEqual, productPrefix, Multiply, notifyAll, isInstanceOf, <init>, ==, clone, copy, toString, !=, getClass, copy$default$1, ne, value, eq, Const, productIterator, right, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of /Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala: Set(asInstanceOf, isInstanceOf, <init>, value)
+The following modified names cause invalidation of /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala: Set(asInstanceOf, left, Expression, isInstanceOf, <init>, ==, toString, value, eq, right)
+The following modified names cause invalidation of /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala: Set(Expression, <init>)
+Invalidating /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala...
+Invalidating (transitively) by inheritance from /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala...
+Initial set of included nodes: Set(/Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala)
+The /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala source file has the following implicit definitions changed:
+	self, context.
+All member reference dependencies will be considered within this context.
+The following member ref dependencies of /Users/purna/akka-supervision/src/main/scala/supervision/FlakyExpressionCalculator.scala are invalidated:
+	/Users/purna/akka-supervision/src/main/scala/supervision/ArithmeticService.scala
+Invalidating /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala...
+Invalidating (transitively) by inheritance from /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala...
+Initial set of included nodes: Set(/Users/purna/akka-supervision/src/main/scala/supervision/Main.scala)
+Invalidated by transitive inheritance dependency: Set(/Users/purna/akka-supervision/src/main/scala/supervision/Main.scala)
+The /Users/purna/akka-supervision/src/main/scala/supervision/Main.scala source file has the following regular definitions changed:
+	notify, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Main, toString, !=, getClass, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 6 s, completed 18-Dec-2015 17:18:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/purna/akka-supervision/}akka-supervision/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@7fdc82a9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 18-Dec-2015 17:18:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/purna/akka-supervision/}akka-supervision/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@4dde7ce9, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 18-Dec-2015 17:18:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/purna/akka-supervision/}akka-supervision/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@60a07c0c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 18-Dec-2015 17:18:53
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRunMain supervision.Main
+Evaluating tasks: compile:backgroundRunMain
+Running task... Cancel: sbt.server.ServerTaskCancellation@24d12909, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+Total time: 0 s, completed 18-Dec-2015 17:19:21
+> server-post-command-cleanup
+> server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 3800@Purnas-MBP.default logs at Fri Dec 18 19:42:22 GMT 2015, goodbye.
